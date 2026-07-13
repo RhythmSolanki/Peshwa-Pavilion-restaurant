@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+
+  --color-warm-cream: #FAF6F0;
+  --color-soft-beige: #E8DED1;
+  --color-dusty-rose: #D8B4A0;
+  --color-sage-green: #B7C4B2;
+  --color-rich-charcoal: #2C2C2C;
+  --color-off-white: #FDFBF8;
+}
+
+body {
+  background-color: var(--color-off-white);
+  color: var(--color-rich-charcoal);
+  font-family: var(--font-sans);
+}
+
+/* Custom smooth scroll offset for anchor links */
+html {
+  scroll-padding-top: 5rem; /* Match the sticky navbar height */
+}
+
+/* Custom styles for luxury touches */
+.text-stroke-gold {
+  -webkit-text-stroke: 1px rgba(216, 180, 160, 0.4);
+  color: transparent;
+}
